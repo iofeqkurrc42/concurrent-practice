@@ -20,7 +20,7 @@ func main() {
 
 	// time.Sleep(100 * time.Second)
 	// shared_memory.Run7()
-	messagepassing.Run18()
+	messagepassing.Run24(100)
 }
 
 func doWork(id int, wg *sharedmemory.WaitGrp) {
