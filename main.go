@@ -1,7 +1,7 @@
 package main
 
 import (
-	"cocurrent/concurrent/messagepassing"
+	"cocurrent/concurrent/deadlock"
 	"cocurrent/concurrent/sharedmemory"
 	"fmt"
 	"time"
@@ -20,7 +20,15 @@ func main() {
 
 	// time.Sleep(100 * time.Second)
 	// shared_memory.Run7()
-	messagepassing.Run24(100)
+	// messagepassing.Run24(100)
+	//for i := 0; i < 5; i++ {
+	//  go func() {
+	//	  fmt.Println(i)
+	//	}()
+	//}
+	//time.Sleep(1 * time.Second)
+	// patterns.Run6()
+	deadlock.Run()
 }
 
 func doWork(id int, wg *sharedmemory.WaitGrp) {
