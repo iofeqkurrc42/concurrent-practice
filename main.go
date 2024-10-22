@@ -28,7 +28,7 @@ func main() {
 	//}
 	//time.Sleep(1 * time.Second)
 	// patterns.Run6()
-	deadlock.Run3()
+	deadlock.Run5()
 }
 
 func doWork(id int, wg *sharedmemory.WaitGrp) {
