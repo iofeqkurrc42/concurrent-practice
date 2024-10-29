@@ -1,7 +1,7 @@
 package main
 
 import (
-	"cocurrent/concurrent/deadlock"
+	"cocurrent/concurrent/atomic"
 	"cocurrent/concurrent/sharedmemory"
 	"fmt"
 	"time"
@@ -28,7 +28,7 @@ func main() {
 	//}
 	//time.Sleep(1 * time.Second)
 	// patterns.Run6()
-	deadlock.Run5()
+	atomic.Run()
 }
 
 func doWork(id int, wg *sharedmemory.WaitGrp) {
